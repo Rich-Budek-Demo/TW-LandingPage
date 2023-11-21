@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <title>TinkRcode 2.0 Landing Page</title>
+  <meta name="description" content="TinkRworks">
+  <meta name="keywords" content="landing page with tiles that flip">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="index.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">  
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&display=swap" rel="stylesheet">  
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+<div class="container" id="table-tiles" style="width: 1366px;">
+    <div class="row" id="header" style="height: 80px;">
+        <div class="col" style="max-width: fit-content;">
+            <a class="menu-link" href="https://www.TinkRworks.com">
+                <img src="./assets/images/TW_Logo_01.png">
+            </a>
+        </div>
+        <div class="col justify-content-end" style="display: flex;">
+            <div class="menu-items"><h6 class="menu-text">ACCOUNT</h6></div>  
+            <div class="menu-items"><h6 class="menu-text">COMMUNITY</h6></div>
+            <div class="menu-items"><h6 class="menu-text">CONNECTIVITY</h6></div>
+            <div class="menu-items"><h6 class="menu-text">SUPPORT</h6></div>
+            <div class="menu-items"><h6 class="menu-text">WHAT'S NEW</h6></div>  
+            <a class="menu-link" href="https://www.TinkRworks.com">
+                <div class="menu-items"><h6 class="menu-text">TINKRWORKS</h6></div> 
+            </a>     
+        </div>
+    </div>
+    <div class="row" id="row-1" style="height: 373px; width: 1366px;">
+        <div class="col" id="col-1-1" style="width: 453px; max-width:453px; margin: 0px; padding: 0px;">
+            <div class="flip-tile-upper" style="height: 373px; width: 453px; margin: 0px; padding: 0px;">
+                <div class="flip-tile-container-upper" style="height: 373px; width: 453px; margin: 0px; padding: 0px;">
+                    <div class="flip-tile-front" style="height: 373px; width: 453px; margin: 0px; padding: 0px;">
+                        <img src="./assets/images/Tile-Account_01.png" width="100%" height="100%">
+                    </div>
+                    <div class="flip-tile-back" id="tile-account" style="height: 373px; width: 453px; margin: 0px; padding: 0px;">
+                        <!-- tile text goes here -->
+                    </div>
+                </div>                
+            </div>
+        </div>
+        <div class="col" id="col-1-2" style="width: 440px; max-width:440px; margin: 0px; padding: 0px;">
+            <div class="row" id="row-1-a" style="height: 133px; width: 440px; margin: 0px; padding: 0px;">
+                <div class="flip-tile-upper" style="height: 133px; width: 440px; margin: 0px; padding: 0px;">
+                    <div class="flip-tile-container-upper" style="height: 133px; width: 440px; margin: 0px; padding: 0px;">
+                        <div class="flip-tile-front" id="tile-whatsnew-front" style="height: 133px; width: 440px; margin: 0px; padding: 0px;">
+                            <img src="./assets/images/Tile-WhatsNew_01.png" width="440" height="133" style="margin: 0px; padding: 0px;">
+                        </div>
+                        <div class="flip-tile-back" id="tile-whatsnew" style="height: 133px; width: 440px; margin: 0px; padding: 0px; border-color: #F4F0E9; border-left: 20px; border-right: 20px; border-bottom: 0px; border-top: 0px; border-style: solid;">
+                            <h1>What's new</h1>
+                            <p>This is where the what's new stuff will go</p>
+                        </div>
+                    </div>                
+                </div>
+            </div>
+            <div class="row" id="row-1-b" style="height: 240px; width: 440px; margin: 0px; padding: 0px;">
+                <img src="./assets/images/Tile-TinkRcode_01.png" width="440" height="240" style="margin: 0px; padding: 0px;">
+            </div>
+        </div>
+        <div class="col" id="col-1-3" style="width: 453px; max-width: 453px; margin: 0px; padding: 0px;" >
+            <div class="flip-tile-upper" style="height: 373px; width: 453px; margin: 0px; padding: 0px;">
+                <div class="flip-tile-container-upper" style="height: 373px; width: 453px; margin: 0px; padding: 0px;">
+                    <div class="flip-tile-front" style="height: 373px; width: 453px; margin: 0px; padding: 0px;">
+                        <img src="./assets/images/Tile-Community_01.png" width="453" height="373" style="margin: 0px; padding: 0px;">
+                    </div>
+                    <div class="flip-tile-back" id="tile-community" style="height: 373px; width: 453px; margin: 0px; padding: 0px;">
+                        <h1>Community</h1>
+                        <p>- TinkRpedia</p>
+                        <p>- 3D models</p>
+                        <p>- Laser Cutter ideas</p>
+                    </div>
+                </div>                
+            </div>
+        </div>
+    </div>
+    <div class="row" id="row-2" style="height: 373px; width: 1366px;">
+        <div class="col" id="col-2-1" style="width: 453px; max-width: 453px; margin: 0px; padding: 0px;">
+            <div class="flip-tile-lower" style="height: 373px; width: 453px; margin: 0px; padding: 0px;">
+                <div class="flip-tile-container-lower" style="height: 373px; width: 453px; margin: 0px; padding: 0px;">
+                    <div class="flip-tile-front" style="height: 373px; width: 453px; margin: 0px; padding: 0px;">
+                        <img src="./assets/images/Tile-Connectivity_01.png" width="453" height="373" style="margin: 0px; padding: 0px;">
+                    </div>
+                    <div class="flip-tile-back" id="tile-connectivity" style="height: 373px; width: 453px; margin: 0px; padding: 0px;">
+                        <h1>Connectivity</h1>
+                        <p>- Real Time Database</p>
+                        <p>- AI model training</p>
+                        <p>- Connected Projects</p>
+                    </div>
+                </div>                
+            </div>
+        </div>
+        <div class="col" id="col-2-2" style="width: 440px; max-width: 440px; margin: 0px; padding: 0px;">
+            <div class="row" id="row-2-a" style="height: 240px; width: 440px; margin: 0px; padding: 0px;">
+                <img src="./assets/images/Tile-TinkRcode_02.png" width="440" height="240" style="margin: 0px; padding: 0px;">
+            </div>
+            <div class="row" id="row-2-b" style="height: 133px; width: 440px; margin: 0px; padding: 0px;">
+                <img src="./assets/images/Tile-BlankBottom_01.png" width="440" height="133" style="margin: 0px; padding: 0px;">
+            </div>
+        </div>
+        <div class="col" id="col-2-3" style="width: 453px; max-width:453px; margin: 0px; padding: 0px;">
+            <div class="flip-tile-lower" style="height: 373px; width: 453px; margin: 0px; padding: 0px;">
+                <div class="flip-tile-container-lower" style="height: 373px; width: 453px; margin: 0px; padding: 0px;">
+                    <div class="flip-tile-front" style="height: 373px; width: 453px; margin: 0px; padding: 0px;">
+                        <img src="./assets/images/Tile-Support_01.png" width="453" height="373" style="margin: 0px; padding: 0px;">
+                    </div>
+                    <div class="flip-tile-back" id="tile-support" style="height: 373px; width: 453px; margin: 0px; padding: 0px;">
+                        <h1>Support</h1>
+                        <p>- Create support ticket</p>
+                        <p>- View support tickets for their organization</p>
+                        <p>- FAQ</p>
+                    </div>
+                </div>                
+            </div>
+        </div>
+    </div>
+</div>
+<script src="./assets/javascript/landingpage.js"></script>
+</body>
+</html>
+
