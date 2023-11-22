@@ -18,7 +18,7 @@
 
 </head>
 <body>
-<div class="container" id="table-tiles">
+<div class="container tile-picker" id="table-tiles">
     <div class="row" id="header" style="height: 80px;">
         <div class="col" style="max-width: fit-content;">
             <a class="menu-link" href="https://www.TinkRworks.com">
@@ -32,45 +32,95 @@
             <p> </p>
             <h2>Pick the Landing Page that you want to view</h2>
             <p> </p>
+            <h5>The backs of the tiles change based on who the user is.</h5>
+            <p></p>
         </div>
     </div>
 
-    <div class="row" id="row-1" style="max-height: 200px; width: 1366px;">
-        <div class="col-1" id="col-1-1" style="margin: 0px; padding: 0px;">
-            <a href="landingpage.html?usertype=admin"><button>Admin&nbsp;&nbsp;&nbsp;</button></a>
-        </div>
-        <div class="col-8" id="col-1-2" style="margin: 0px; padding: 0px;">
-            <h4>What a TW system admin will see</h4>
-        </div>
-        <div class="col" id="col-1-2" style="margin: 0px; padding: 0px;">
-            <h4> </h4>
-        </div>
-    </div>
-
-    <div class="row" id="row-2" style="max-height: 200px; width: 1366px;">
+    <div class="row" id="row-2" style="width: 1366px; margin-bottom: 10px; margin-top: 10px;">
         <div class="col-1" id="col-2-1" style="margin: 0px; padding: 0px;">
             <a href="landingpage.html?usertype=teacher"><button type="button">Teacher</button></a>
         </div>
         <div class="col-8" id="col-1-2" style="margin: 0px; padding: 0px;">
-            <h4>What a teacher will see</h4>
+            <h5>what a teacher will see</h5>
         </div>
         <div class="col" id="col-1-2" style="margin: 0px; padding: 0px;">
             <h4> </h4>
         </div>
     </div>
 
-    <div class="row" id="row-2" style="max-height: 200px; width: 1366px;">
+    <div class="row" id="row-2" style="width: 1366px; margin-bottom: 10px; margin-top: 10px;">
         <div class="col-1" id="col-2-1" style="margin: 0px; padding: 0px;">
             <a href="landingpage.html?usertype=student"><button type="button">Student</button></a>
         </div>
         <div class="col-8" id="col-1-2" style="margin: 0px; padding: 0px;">
-            <h4>What a student will see</h4>
+            <h5>what a student will see</h5>
         </div>
         <div class="col" id="col-1-2" style="margin: 0px; padding: 0px;">
             <h4> </h4>
         </div>
     </div>
 
+    <div class="row" id="row-1" style="width: 1366px; margin-bottom: 10px; margin-top: 10px;">
+        <div class="col-1" id="col-1-1" style="margin: 0px; padding: 0px;">
+            <a href="landingpage.html?usertype=admin"><button>Admin&nbsp;&nbsp;&nbsp;</button></a>
+        </div>
+        <div class="col-8" id="col-1-2" style="margin: 0px; padding: 0px;">
+            <h5>what a TW system admin will see</h5>
+        </div>
+        <div class="col" id="col-1-2" style="margin: 0px; padding: 0px;">
+            <h4> </h4>
+        </div>
+    </div>
+
+
+    <div class="row" id="row-1" style="width: 1366px; margin-bottom: 10px; margin-top: 10px;">
+        <p></p>
+    </div>
+
+    <div class="row" id="row-1" style="width: 1366px; margin-bottom: 10px; margin-top: 10px;">
+        <div class="col-1" id="col-1-1" style="margin: 0px; padding: 0px;">
+            <button id="bttnDesign">Design&nbsp;&nbsp;&nbsp;</button>
+        </div>
+        <div class="col-8" id="col-1-2" style="margin: 0px; padding: 0px;">
+            <h5>explanation of the landing page design</h5>
+        </div>
+        <div class="col" id="col-1-2" style="margin: 0px; padding: 0px;">
+            <h4> </h4>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div id="modal01" class="modal modal-centered">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h4>Landing Page Design</h4>
+            <p></p>
+            
+            <h6><b>Overall Look</b><br>
+            The landing page was designed with an overall look to look like interlocking blocks, <br>
+            evoking the block programing of TinkRcode.<br><br>
+
+            <b>Orange Circle</b><br>
+            The orange circle in the center shows: <br>
+            - all of the blocks (tiles) are connected<br>
+            - centers the attention, to TinkRcode<br>
+            - all users whether teachers or students will at some point be programing<br>
+            - afterall, the core of all our projects is still the programing<br><br>
+
+            <b>Flip tile naviagtion</b> <br>
+            Flip tiles were chosen so that in the stress of a teaching environment,<br>
+            the teacher is not having to navigate between sub menus to try and recall where<br>
+            to locate an option. Everything is a one click away after hovering over a tile. <br><br>
+            In addition, as a sales "enticement" and to create questions, the scope for<br>
+            the entire impressive "platform" is easily visible<br>
+        </h6>
+        </div>
+    
+    </div>
+
 </div>
+<script src="./assets/javascript/index.js"></script>
 </body>
 </html>
