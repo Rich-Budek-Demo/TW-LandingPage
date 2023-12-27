@@ -11,15 +11,17 @@ function fillInAccountTile( userType ) {
 
         h1Tag = $("<h1>")
         h1Tag.append("Account - all")
-        h1Tag.attr("style", "text-align: center")
+        h1Tag.addClass("tile-text-heading")
         p1Tag = $("<p>")
         p1Tag.append("Teachers will see:")
+        p1Tag.addClass("tile-text-sections")
         p2Tag = $("<p>")
         p2Tag.append("- classes, students, curriculum, pd materials")
         p3Tag = $("<p>")
         p3Tag.append("&nbsp;")
         p4Tag = $("<p>")
         p4Tag.append("Students will see:")
+        p4Tag.addClass("tile-text-sections")
         p5Tag = $("<p>")
         p5Tag.append("- messages from teacher, links to websites")
         p6Tag = $("<p>")
@@ -49,7 +51,7 @@ function fillInAccountTile( userType ) {
 
         h1Tag = $("<h1>")
         h1Tag.append("Admin Account")
-        h1Tag.attr("style", "text-align: center")
+        h1Tag.addClass("tile-text-heading")
         p0Tag = $("<p>")
         p0Tag.append("&nbsp;")
 
@@ -62,10 +64,12 @@ function fillInAccountTile( userType ) {
 
         p1Tag = $("<p>")
         p1Tag.append("ADMIN PANEL")
-        p1Tag.attr("style", "padding-left: 10px; margin-top: 0px; ")
+        p1Tag.addClass("tile-text-sections")
+        p1Tag.attr("style", "margin-top: 0px; ")
         p2Tag = $("<p>")
         p2Tag.append("ADMIN REPORTS")
-        p2Tag.attr("style", "padding-left: 10px; margin-top: 15px; margin-bottom: 0px;")
+        p2Tag.addClass("tile-text-sections")
+        p2Tag.attr("style", "margin-top: 15px;")
 
         p3Tag = $("<p>")
         p3Tag.append("licensing")
@@ -117,7 +121,7 @@ function fillInAccountTile( userType ) {
 
         h1Tag = $("<h1>")
         h1Tag.append("Teacher Account")
-        h1Tag.attr("style", "text-align: center")
+        h1Tag.addClass("tile-text-heading")
         p0Tag = $("<p>")
         p0Tag.append("&nbsp;")
 
@@ -130,10 +134,11 @@ function fillInAccountTile( userType ) {
 
         p1Tag = $("<p>")
         p1Tag.append("CLASSES")
-        p1Tag.attr("style", "padding-left: 10px;")
+        p1Tag.addClass("tile-text-sections")
         p2Tag = $("<p>")
         p2Tag.append("STUDENTS")
-        p2Tag.attr("style", "padding-left: 10px; margin-bottom: 0px")
+        p2Tag.addClass("tile-text-sections")
+        p2Tag.attr("style", "margin-top: 15px;")
 
         p3Tag = $("<p>")
         p3Tag.append("status")
@@ -160,14 +165,17 @@ function fillInAccountTile( userType ) {
 
         p8Tag = $("<p>")
         p8Tag.append("CURRICULUM")
+        p8Tag.addClass("tile-text-sections")
         p9Tag = $("<p>")
         p9Tag.append("RESOURCES")
-        p9Tag.attr("style", "margin-bottom: 0px;")
+        p9Tag.addClass("tile-text-sections")
+        p9Tag.attr("style", "margin-top: 15px;")
         p10Tag = $("<p>")
         p10Tag.append("PD materials")
         p10Tag.attr("style", "padding-left: 30px;")
         p11Tag = $("<p>")
         p11Tag.append("REPORTS")
+        p11Tag.addClass("tile-text-sections")
         divCol2.append(p8Tag)
         divCol2.append(p9Tag)
         divCol2.append(p10Tag)
@@ -195,7 +203,7 @@ function fillInAccountTile( userType ) {
         spanTag.attr("style", "text-align:left")
         h1Tag = $("<h1>")
         h1Tag.append("Student Account")
-        h1Tag.attr("style", "text-align: center")
+        h1Tag.addClass("tile-text-heading")
 
         p0Tag = $("<p>")
         p0Tag.append("&nbsp;")
@@ -317,15 +325,17 @@ function fillInCommunityTile( userType ) {
 
         h1Tag = $("<h1>")
         h1Tag.append("Community - all")
-        h1Tag.attr("style", "text-align: center")
+        h1Tag.addClass("tile-text-heading")
         p1Tag = $("<p>")
         p1Tag.append("Teachers will see:")
+        p1Tag.addClass("tile-text-sections")
         p2Tag = $("<p>")
         p2Tag.append("- project ideas, blogs, forum, <br>- TinkRpedia, challenges for entire project")
         p3Tag = $("<p>")
         p3Tag.append("&nbsp;")
         p4Tag = $("<p>")
         p4Tag.append("Students will see:")
+        p4Tag.addClass("tile-text-sections")
         p5Tag = $("<p>")
         p5Tag.append("- social media, 3D models, Code Sharing, Contests")
         p6Tag = $("<p>")
@@ -355,7 +365,7 @@ function fillInCommunityTile( userType ) {
 
         h1Tag = $("<h1>")
         h1Tag.append("Admin Community")
-        h1Tag.attr("style", "text-align: center")
+        h1Tag.addClass("tile-text-heading")
         p0Tag = $("<p>")
         p0Tag.append("&nbsp;")
 
@@ -368,14 +378,15 @@ function fillInCommunityTile( userType ) {
 
         p1Tag = $("<p>")
         p1Tag.append("TINKRPEDIA")
-        p1Tag.attr("style", "padding-left: 10px; margin-top: 0px; margin-bottom: 0px; ")
+        p1Tag.addClass("tile-text-sections")
         p2Tag = $("<p>")
         p2Tag.append("edit pages")
         p2Tag.attr("style", "padding-left: 30px; margin-bottom: 0px;")
 
         p3Tag = $("<p>")
         p3Tag.append("FORUM / BLOGS")
-        p3Tag.attr("style", "padding-left: 10px; margin-top: 15px; margin-bottom: 0px;")
+        p3Tag.addClass("tile-text-sections")
+        p3Tag.attr("style", "margin-top: 15px;")
         p4Tag = $("<p>")
         p4Tag.append("setup users")
         p4Tag.attr("style", "padding-left: 30px; margin-bottom: 0px;")
@@ -385,7 +396,8 @@ function fillInCommunityTile( userType ) {
 
         p6Tag = $("<p>")
         p6Tag.append("SOCIAL MEDIA")
-        p6Tag.attr("style", "padding-left: 10px; margin-top: 15px; margin-bottom: 0px;")
+        p6Tag.addClass("tile-text-sections")
+        p6Tag.attr("style", "margin-top: 15px;")
         p7Tag = $("<p>")
         p7Tag.append("add links to TW platform")
         p7Tag.attr("style", "padding-left: 30px; margin-bottom: 0px;")
@@ -423,7 +435,7 @@ function fillInCommunityTile( userType ) {
 
         h1Tag = $("<h1>")
         h1Tag.append("Teacher Community")
-        h1Tag.attr("style", "text-align: center")
+        h1Tag.addClass("tile-text-heading")
         p0Tag = $("<p>")
         p0Tag.append("&nbsp;")
 
@@ -436,21 +448,27 @@ function fillInCommunityTile( userType ) {
 
         a1Tag = $("<a>")
         a1Tag.attr("href", "http://www.tinkrpedia.com/")
+        a1Tag.addClass("tile-text-sections")
+        a1Tag.attr("style", "padding-left: 0px; margin-top: 0px; margin-bottom: 0px;")
         p1Tag = $("<p>")
         p1Tag.append("TinkRpedia")
+        p1Tag.addClass("tile-text-sections")
         p1Tag.attr("style", "padding-left: 10px; margin-top: 0px; margin-bottom: 0px;")
         a1Tag.append(p1Tag)
 
         p2Tag = $("<p>")
         p2Tag.append("PROJECT IDEAS")
-        p2Tag.attr("style", "padding-left: 10px; margin-top: 15px; margin-bottom: 0px;")
+        p2Tag.addClass("tile-text-sections")
+        p2Tag.attr("style", "margin-top: 15px;")
         p3Tag = $("<p>")
         p3Tag.append("TEACHER FORUM / BLOG")
-        p3Tag.attr("style", "padding-left: 10px; margin-top: 15px; margin-bottom: 0px;")
+        p3Tag.addClass("tile-text-sections")
+        p3Tag.attr("style", "margin-top: 15px;")
 
         p4Tag = $("<p>")
         p4Tag.append("SOCIAL MEDIA")
-        p4Tag.attr("style", "padding-left: 10px; padding-top: 15px; margin-bottom: 0px;")
+        p4Tag.addClass("tile-text-sections")
+        p4Tag.attr("style", "padding-top: 15px;")
         p5Tag = $("<p>")
         p5Tag.append("YouTube")
         p5Tag.attr("style", "padding-left: 30px; margin-bottom: 0px")
@@ -479,7 +497,8 @@ function fillInCommunityTile( userType ) {
 
         p100Tag = $("<p>")
         p100Tag.append("3D MODELS")
-        p100Tag.attr("style", "padding-left: 10px; margin-top: 0px; margin-bottom: 0px;")
+        p100Tag.addClass("tile-text-sections")
+        p100Tag.attr("style", "padding-left: 0px; ")
         p101Tag = $("<p>")
         p101Tag.append("view from community")
         p101Tag.attr("style", "padding-left: 30px; margin-bottom: 0px")
@@ -489,7 +508,8 @@ function fillInCommunityTile( userType ) {
 
         p103Tag = $("<p>")
         p103Tag.append("PROJECT COLLABORATION")
-        p103Tag.attr("style", "margin-bottom: 0px; padding-top: 15px;")
+        p103Tag.addClass("tile-text-sections")
+        p103Tag.attr("style", "padding-top: 15px; padding-left: 0px;")
         p104Tag = $("<p>")
         p104Tag.append("enable code sharing")
         p104Tag.attr("style", "padding-left: 30px; margin-bottom: 0px")
@@ -502,7 +522,8 @@ function fillInCommunityTile( userType ) {
 
         p107Tag = $("<p>")
         p107Tag.append("CONTESTS")
-        p107Tag.attr("style", "padding-top: 15px; margin-bottom: 0px;")
+        p107Tag.addClass("tile-text-sections")
+        p107Tag.attr("style", "padding-top: 15px;")
         p108Tag = $("<p>")
         p108Tag.append("enable contests")
         p108Tag.attr("style", "padding-left: 30px; margin-bottom: 0px")
@@ -536,7 +557,7 @@ function fillInCommunityTile( userType ) {
         spanTag.attr("style", "text-align:left")
         h1Tag = $("<h1>")
         h1Tag.append("Student Community")
-        h1Tag.attr("style", "text-align: center")
+        h1Tag.addClass("tile-text-heading")
 
         p0Tag = $("<p>")
         p0Tag.append("&nbsp;")
@@ -550,7 +571,7 @@ function fillInCommunityTile( userType ) {
 
         p1Tag = $("<p>")
         p1Tag.append("SOCIAL MEDIA")
-        p1Tag.attr("style", "padding-left: 10px; margin-bottom: 0px;")
+        p1Tag.addClass("tile-text-sections")
         p2Tag = $("<p>")
         p2Tag.append("YouTube")
         p2Tag.attr("style", "padding-left: 30px; margin-bottom: 0px")
@@ -563,7 +584,8 @@ function fillInCommunityTile( userType ) {
 
         p5Tag = $("<p>")
         p5Tag.append("3D MODELS")
-        p5Tag.attr("style", "padding-left: 10px; padding-top: 15px; margin-bottom: 0px;")
+        p5Tag.addClass("tile-text-sections")
+        p5Tag.attr("style", "padding-top: 15px;")
         p6Tag = $("<p>")
         p6Tag.append("required")
         p6Tag.attr("style", "padding-left: 30px; margin-bottom: 0px")
@@ -581,7 +603,7 @@ function fillInCommunityTile( userType ) {
 
         p8Tag = $("<p>")
         p8Tag.append("PROJECT COLLABORATION")
-        p8Tag.attr("style", "margin-bottom: 0px;")
+        p8Tag.addClass("tile-text-sections")
         p9Tag = $("<p>")
         p9Tag.append("code sharing")
         p9Tag.attr("style", "padding-left: 30px; margin-bottom: 0px")
@@ -594,7 +616,8 @@ function fillInCommunityTile( userType ) {
 
         p12Tag = $("<p>")
         p12Tag.append("CONTESTS")
-        p12Tag.attr("style", "padding-top: 15px; margin-bottom: 0px;")
+        p12Tag.addClass("tile-text-sections")
+        p12Tag.attr("style", "padding-top: 15px;")
         divCol2.append(p8Tag)
         divCol2.append(p9Tag)
         divCol2.append(p10Tag)
@@ -643,15 +666,17 @@ function fillInConnectivityTile( userType ) {
 
         h1Tag = $("<h1>")
         h1Tag.append("Connectivity - all")
-        h1Tag.attr("style", "text-align: center")
+        h1Tag.addClass("tile-text-heading")
         p1Tag = $("<p>")
         p1Tag.append("Teachers will see:")
+        p1Tag.addClass("tile-text-sections")
         p2Tag = $("<p>")
         p2Tag.append("- real-time monitoring,  <br>- Peer to Peer, VR Models")
         p3Tag = $("<p>")
         p3Tag.append("&nbsp;")
         p4Tag = $("<p>")
         p4Tag.append("Students will see:")
+        p4Tag.addClass("tile-text-sections")
         p5Tag = $("<p>")
         p5Tag.append("- web page, ai/training models")
         p6Tag = $("<p>")
@@ -681,7 +706,7 @@ function fillInConnectivityTile( userType ) {
 
         h1Tag = $("<h1>")
         h1Tag.append("Admin Connectivity")
-        h1Tag.attr("style", "text-align: center")
+        h1Tag.addClass("tile-text-heading")
         p0Tag = $("<p>")
         p0Tag.append("&nbsp;")
 
@@ -694,7 +719,7 @@ function fillInConnectivityTile( userType ) {
 
         p1Tag = $("<p>")
         p1Tag.append("REAL TIME MONITORING")
-        p1Tag.attr("style", "padding-left: 10px; margin-bottom: 0px; margin-top: 0px;")
+        p1Tag.addClass("tile-text-sections")
         p2Tag = $("<p>")
         p2Tag.append("setup database")
         p2Tag.attr("style", "padding-left: 30px; margin-bottom: 0px;")
@@ -704,7 +729,8 @@ function fillInConnectivityTile( userType ) {
 
         p4Tag = $("<p>")
         p4Tag.append("IOT WEB SERVER SETUP")
-        p4Tag.attr("style", "padding-left: 10px; margin-bottom: 0px; margin-top: 15px;")
+        p4Tag.addClass("tile-text-sections")
+        p4Tag.attr("style", "margin-top: 15px;")
         p5Tag = $("<p>")
         p5Tag.append("setup projects")
         p5Tag.attr("style", "padding-left: 30px; margin-bottom: 0px;")
@@ -714,7 +740,8 @@ function fillInConnectivityTile( userType ) {
 
         p7Tag = $("<p>")
         p7Tag.append("AI / ML")
-        p7Tag.attr("style", "padding-left: 10px; margin-bottom: 0px; margin-top: 15px;")
+        p7Tag.addClass("tile-text-sections")
+        p7Tag.attr("style", "margin-top: 15px;")
         p8Tag = $("<p>")
         p8Tag.append("setup local models")
         p8Tag.attr("style", "padding-left: 30px;  margin-bottom: 0px;")
@@ -739,7 +766,7 @@ function fillInConnectivityTile( userType ) {
         //right hand column
         p100Tag = $("<p>")
         p100Tag.append("DATA SCIENCE")
-        p100Tag.attr("style", "padding-left: 10px; margin-bottom: 0px; margin-top: 0px;")
+        p100Tag.addClass("tile-text-sections")
         p101Tag = $("<p>")
         p101Tag.append("setup apps to use")
         p101Tag.attr("style", "padding-left: 30px; margin-bottom: 0px;")
@@ -752,7 +779,8 @@ function fillInConnectivityTile( userType ) {
 
         p104Tag = $("<p>")
         p104Tag.append("VR MODELS")
-        p104Tag.attr("style", "padding-left: 10px; margin-bottom: 0px; margin-top: 15px;")
+        p104Tag.addClass("tile-text-sections")
+        p104Tag.attr("style", "margin-top: 15px;")
         p105Tag = $("<p>")
         p105Tag.append("upload model")
         p105Tag.attr("style", "padding-left: 30px; margin-bottom: 0px;")
@@ -790,7 +818,7 @@ function fillInConnectivityTile( userType ) {
 
         h1Tag = $("<h1>")
         h1Tag.append("Teacher Connectivity")
-        h1Tag.attr("style", "text-align: center")
+        h1Tag.addClass("tile-text-heading")
         p0Tag = $("<p>")
         p0Tag.append("&nbsp;")
 
@@ -803,14 +831,15 @@ function fillInConnectivityTile( userType ) {
 
         p1Tag = $("<p>")
         p1Tag.append("REAL TIME MONITORING")
-        p1Tag.attr("style", "padding-left: 10px; margin-bottom: 0px; margin-top: 0px;")
+        p1Tag.addClass("tile-text-sections")
         p2Tag = $("<p>")
         p2Tag.append("view status")
         p2Tag.attr("style", "padding-left: 30px; margin-bottom: 0px;")
 
         p3Tag = $("<p>")
         p3Tag.append("IOT WEB SERVER SETUP")
-        p3Tag.attr("style", "padding-left: 10px; margin-bottom: 0px; margin-top: 15px;")
+        p3Tag.addClass("tile-text-sections")
+        p3Tag.attr("style", "margin-top: 15px;")
         p4Tag = $("<p>")
         p4Tag.append("setup classes")
         p4Tag.attr("style", "padding-left: 30px; margin-bottom: 0px;")
@@ -820,7 +849,8 @@ function fillInConnectivityTile( userType ) {
 
         p6Tag = $("<p>")
         p6Tag.append("AI / ML")
-        p6Tag.attr("style", "padding-left: 10px; margin-bottom: 0px; margin-top: 15px;")
+        p6Tag.addClass("tile-text-sections")
+        p6Tag.attr("style", "margin-top: 15px;")
         p7Tag = $("<p>")
         p7Tag.append("distribute models")
         p7Tag.attr("style", "padding-left: 30px;  margin-bottom: 0px;")
@@ -848,7 +878,7 @@ function fillInConnectivityTile( userType ) {
         //right hand column
         p100Tag = $("<p>")
         p100Tag.append("DATA SCIENCE")
-        p100Tag.attr("style", "padding-left: 10px; margin-bottom: 0px; margin-top: 0px;")
+        p100Tag.addClass("tile-text-sections")
         p101Tag = $("<p>")
         p101Tag.append("run apps")
         p101Tag.attr("style", "padding-left: 30px; margin-bottom: 0px;")
@@ -858,7 +888,8 @@ function fillInConnectivityTile( userType ) {
 
         p103Tag = $("<p>")
         p103Tag.append("PEER TO PEER")
-        p103Tag.attr("style", "padding-left: 10px; margin-bottom: 0px; margin-top: 15px;")
+        p103Tag.addClass("tile-text-sections")
+        p103Tag.attr("style", "margin-top: 15px;")
         p104Tag = $("<p>")
         p104Tag.append("view status")
         p104Tag.attr("style", "padding-left: 30px; margin-bottom: 0px;")
@@ -868,7 +899,8 @@ function fillInConnectivityTile( userType ) {
 
         p106Tag = $("<p>")
         p106Tag.append("VR MODELS")
-        p106Tag.attr("style", "padding-left: 10px; margin-bottom: 0px; margin-top: 15px;")
+        p106Tag.addClass("tile-text-sections")
+        p106Tag.attr("style", "margin-top: 15px;")
         p107Tag = $("<p>")
         p107Tag.append("upload model")
         p107Tag.attr("style", "padding-left: 30px; margin-bottom: 0px;")
@@ -907,7 +939,7 @@ function fillInConnectivityTile( userType ) {
         spanTag.attr("style", "text-align:left")
         h1Tag = $("<h1>")
         h1Tag.append("Student Connectivity")
-        h1Tag.attr("style", "text-align: center")
+        h1Tag.addClass("tile-text-heading")
 
         p0Tag = $("<p>")
         p0Tag.append("&nbsp;")
@@ -922,21 +954,23 @@ function fillInConnectivityTile( userType ) {
 
         p1Tag = $("<p>")
         p1Tag.append("REAL TIME MONITORING")
-        p1Tag.attr("style", "padding-left: 10px; margin-bottom: 0px; margin-top: 0px;")
+        p1Tag.addClass("tile-text-sections")
         p2Tag = $("<p>")
         p2Tag.append("view class status")
         p2Tag.attr("style", "padding-left: 30px; margin-bottom: 0px;")
 
         p3Tag = $("<p>")
         p3Tag.append("IOT WEB SERVER")
-        p3Tag.attr("style", "padding-left: 10px; margin-bottom: 0px; margin-top: 15px;")
+        p3Tag.addClass("tile-text-sections")
+        p3Tag.attr("style", "margin-top: 15px;")
         p4Tag = $("<p>")
         p4Tag.append("view class web page")
         p4Tag.attr("style", "padding-left: 30px; margin-bottom: 0px;")
 
         p5Tag = $("<p>")
         p5Tag.append("AI / ML")
-        p5Tag.attr("style", "padding-left: 10px; margin-bottom: 0px; margin-top: 15px;")
+        p5Tag.addClass("tile-text-sections")
+        p5Tag.attr("style", "margin-top: 15px;")
         p6Tag = $("<p>")
         p6Tag.append("connect to model")
         p6Tag.attr("style", "padding-left: 30px;  margin-bottom: 0px;")
@@ -959,7 +993,7 @@ function fillInConnectivityTile( userType ) {
         //right hand column
         p100Tag = $("<p>")
         p100Tag.append("DATA SCIENCE")
-        p100Tag.attr("style", "padding-left: 10px; margin-bottom: 0px; margin-top: 0px;")
+        p100Tag.addClass("tile-text-sections")
         p101Tag = $("<p>")
         p101Tag.append("collect data")
         p101Tag.attr("style", "padding-left: 30px; margin-bottom: 0px;")
@@ -972,14 +1006,16 @@ function fillInConnectivityTile( userType ) {
 
         p104Tag = $("<p>")
         p104Tag.append("PEER TO PEER")
-        p104Tag.attr("style", "padding-left: 10px; margin-bottom: 0px; margin-top: 15px;")
+        p104Tag.addClass("tile-text-sections")
+        p104Tag.attr("style", "margin-top: 15px;")
         p105Tag = $("<p>")
         p105Tag.append("connect project")
         p105Tag.attr("style", "padding-left: 30px; margin-bottom: 0px;")
 
         p106Tag = $("<p>")
         p106Tag.append("VR MODELS")
-        p106Tag.attr("style", "padding-left: 10px; margin-bottom: 0px; margin-top: 15px;")
+        p106Tag.addClass("tile-text-sections")
+        p106Tag.attr("style", "margin-top: 15px;")
         p107Tag = $("<p>")
         p107Tag.append("view model")
         p107Tag.attr("style", "padding-left: 30px; margin-bottom: 0px;")
@@ -1031,7 +1067,6 @@ function fillInConnectivityTile( userType ) {
 }  //fill In Connectivity Tile
 
 
-
 function fillInSupportTile( userType ) {
     function text_all(){
         var outStr = ""
@@ -1043,7 +1078,7 @@ function fillInSupportTile( userType ) {
 
         h1Tag = $("<h1>")
         h1Tag.append("Support - all")
-        h1Tag.attr("style", "text-align: center")
+        h1Tag.addClass("tile-text-heading")
         p1Tag = $("<p>")
         p1Tag.append("Teachers will see:")
         p2Tag = $("<p>")
@@ -1079,7 +1114,7 @@ function fillInSupportTile( userType ) {
 
         h1Tag = $("<h1>")
         h1Tag.append("Admin Support")
-        h1Tag.attr("style", "text-align: center")
+        h1Tag.addClass("tile-text-heading")
         p0Tag = $("<p>")
         p0Tag.append("&nbsp;")
 
@@ -1181,7 +1216,7 @@ function fillInSupportTile( userType ) {
 
         h1Tag = $("<h1>")
         h1Tag.append("Teacher Support")
-        h1Tag.attr("style", "text-align: center")
+        h1Tag.addClass("tile-text-heading")
         p0Tag = $("<p>")
         p0Tag.append("&nbsp;")
 
@@ -1271,7 +1306,7 @@ function fillInSupportTile( userType ) {
         spanTag.attr("style", "text-align:left")
         h1Tag = $("<h1>")
         h1Tag.append("Student Support")
-        h1Tag.attr("style", "text-align: center")
+        h1Tag.addClass("tile-text-heading")
 
         p0Tag = $("<p>")
         p0Tag.append("&nbsp;")
@@ -1363,7 +1398,7 @@ function fillInWhatsNewTile( userType ) {
 
         h1Tag = $("<h1>")
         h1Tag.append("What's New - all")
-        h1Tag.attr("style", "text-align: center")
+        h1Tag.addClass("tile-text-heading")
         p1Tag = $("<p>")
         p1Tag.append("Teachers will see:")
         p2Tag = $("<p>")
@@ -1401,7 +1436,7 @@ function fillInWhatsNewTile( userType ) {
 
         h1Tag = $("<h1>")
         h1Tag.append("What's New")
-        h1Tag.attr("style", "text-align: center; margin-bottom: 0px;")
+        h1Tag.addClass("tile-text-heading")
 
         divRow = $("<div>")
         divRow.addClass("row")
@@ -1445,7 +1480,7 @@ function fillInWhatsNewTile( userType ) {
 
         h1Tag = $("<h1>")
         h1Tag.append("What's New")
-        h1Tag.attr("style", "text-align: center")
+        h1Tag.addClass("tile-text-heading")
         p0Tag = $("<p>")
         p0Tag.append("&nbsp;")
 
@@ -1503,7 +1538,7 @@ function fillInWhatsNewTile( userType ) {
 
         h1Tag = $("<h1>")
         h1Tag.append("What's New")
-        h1Tag.attr("style", "text-align: center")
+        h1Tag.addClass("tile-text-heading")
         p0Tag = $("<p>")
         p0Tag.append("&nbsp;")
 
@@ -1558,9 +1593,29 @@ function fillInWhatsNewTile( userType ) {
             break;
     }
 
-    $("#tile-whatsnew").append(tileStr)
+    $("#tile-whatsnew").append(tileStr);
 }  //fill What's New Tile
 
+
+function fillInScreenSize(){
+    function winSize() {
+        outStr = "Inner Width: " + this.innerWidth
+        outStr = outStr + "  Inner Height: " + this.innerHeight + "<br/>"
+        outStr = outStr + "  Outer Width: " + this.outerWidth
+        outStr = outStr + "  Outer Height: " + this.outerHeight + "<br/>"
+        outStr = outStr + "  Real width: " + window.screen.width * window.devicePixelRatio;
+        outStr = outStr + "  Real height: " + window.screen.height * window.devicePixelRatio  + "<br/>";
+        outStr = outStr + "  Pixel ratio: " + window.devicePixelRatio;
+        return outStr
+    }
+
+    winSizeStr = winSize();
+    p1Tag = $("<p>");
+    p1Tag.append(winSizeStr);
+
+    p1Tag.attr("style", "padding-left: 10px; margin-bottom: 0px; margin-top: 15px;");
+    $("#row-3").append(p1Tag);
+}
 
 
 $(document).ready(function(){
@@ -1610,5 +1665,6 @@ $(document).ready(function(){
     fillInConnectivityTile(userType)
     fillInSupportTile(userType)
     fillInWhatsNewTile(userType)
+    fillInScreenSize();
 })
 
