@@ -1603,6 +1603,8 @@ function fillInScreenSize(){
         outStr = outStr + "  Inner Height: " + this.innerHeight + "<br/>"
         outStr = outStr + "  Outer Width: " + this.outerWidth
         outStr = outStr + "  Outer Height: " + this.outerHeight + "<br/>"
+        outStr = outStr + "  Screen Width: " + window.screen.width;
+        outStr = outStr + "  Screen Height: " + window.screen.height + "<br/>"
         outStr = outStr + "  Real width: " + window.screen.width * window.devicePixelRatio;
         outStr = outStr + "  Real height: " + window.screen.height * window.devicePixelRatio  + "<br/>";
         outStr = outStr + "  Pixel ratio: " + window.devicePixelRatio;
